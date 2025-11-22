@@ -7,8 +7,6 @@ tensorflow lite project on trained data
 
 Improving the quality of EEG signals in real time using Niura’s in ear earbuds and a lightweight neural network.
 
----
-
 ## What this project is
 
 This project takes noisy brainwave signals from the Niura earbuds and cleans them in real time. The goal is to remove motion noise and improve the clarity of the EEG so it can be used for focus tracking and other applications.
@@ -20,8 +18,6 @@ The system works end to end:
 3. Convert the model into a mobile friendly format
 4. Run it inside an Android app that cleans the EEG as you are wearing the earbuds
 
----
-
 ## What the model does
 
 The model looks at two seconds of EEG at a time and tries to produce a cleaner version of the same window. It is trained using pairs of recordings:
@@ -31,7 +27,6 @@ The model looks at two seconds of EEG at a time and tries to produce a cleaner v
 
 Over time, it learns the pattern of noise and how to remove it.
 
----
 
 ## How the data is prepared
 
@@ -42,7 +37,6 @@ The data used in this project comes from real recordings made with Niura’s ear
 * Normalized so the model can learn consistently
 * Paired as noisy and clean samples
 
----
 
 ## How the model is trained
 
@@ -55,8 +49,6 @@ The autoencoder model is trained using TensorFlow. The training script:
 
 The final model is small and runs efficiently.
 
----
-
 ## Mobile deployment
 
 After training, the model is converted to TensorFlow Lite, which allows it to run directly on Android. Inside the app:
@@ -67,8 +59,6 @@ After training, the model is converted to TensorFlow Lite, which allows it to ru
 * The app displays both raw and denoised signals
 
 The full process runs smoothly at about eight milliseconds per window.
-
----
 
 ## What the app shows
 
@@ -81,8 +71,6 @@ The Android interface visualizes:
 
 This lets users see exactly how much noise is removed.
 
----
-
 ## Why this matters
 
 Cleaner EEG makes it possible to:
@@ -93,8 +81,6 @@ Cleaner EEG makes it possible to:
 * Unlock better applications for wearable neurotechnology
 
 This project shows that real time EEG denoising is possible on consumer hardware without heavy processing.
-
----
 
 ## How to try it
 
