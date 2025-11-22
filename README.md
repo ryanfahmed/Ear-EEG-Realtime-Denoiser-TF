@@ -116,11 +116,3 @@ All scripts in this repository support these steps.
 
 All EEG recordings were collected using Niura’s earbuds.
 All data processing, model training, and mobile integration were created as part of this project.
-
----
-
-If you want, I can also create:
-
-* A one page version for resumes or investors
-* A poster or slide version for class presentations
-* A tagline and short description for your LinkedIn or website
