@@ -1,8 +1,5 @@
 # Ear-EEG-Realtime-Denoiser-TF
-tensorflow project on trained data
-Here is a **simplified, clean, non technical README**.
-Written as if you are presenting to classmates, judges, or general audiences with no ML or engineering background.
-No jargon. No math. No AI tone. Very plain language.
+tensorflow lite project on trained data
 
 ---
 
